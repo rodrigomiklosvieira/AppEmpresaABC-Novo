@@ -4,4 +4,8 @@
     <string name="senha">Senha:</string>
     <string name="entrar">Entrar</string>
     <string name="sair">Sair</string>
+    <string name="computer">computer</string>
+    <string name="monitor">monitor</string>
+    <string name="keyboard">keyboard</string>
+    <string name="mouse">mouse</string>
 </resources>
