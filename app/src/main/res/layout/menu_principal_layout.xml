@@ -66,6 +66,16 @@
                 android:text="@string/mouse"
                 android:textColor="@color/corFonteMenuPrincipal" />
         </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="220dp" />
+            
+        </LinearLayout>
 
     </LinearLayout>
 

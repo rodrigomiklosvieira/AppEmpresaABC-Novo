@@ -1,14 +1,17 @@
 package br.com.etecia.appempresaabc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText txtUsuario, txtSenha;
+    Button sairSistema;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,8 @@ public class LoginActivity extends AppCompatActivity {
 
         txtUsuario = (EditText) findViewById(R.id.edtUsuario);
         txtSenha = (EditText) findViewById(R.id.edtSenha);
+
+        sairSistema = (Button)findViewById(R.id.btnSair);
     }
 
     public void sairApp(View view) {
@@ -31,6 +36,9 @@ public class LoginActivity extends AppCompatActivity {
         if (usuario.equals("etecia") && senha.equals("etecia")) {
 
           Toast.makeText(getApplicationContext(),"Bem vindo ao sistema",Toast.LENGTH_SHORT).show();
+          Intent intent = new Intent(LoginActivity.this, MenuPrincipalActivity.class);
+          startActivity(intent);
+
 
         }else{
             Toast.makeText(getApplicationContext(),"Usuário ou senha inválidos",Toast.LENGTH_SHORT).show();
